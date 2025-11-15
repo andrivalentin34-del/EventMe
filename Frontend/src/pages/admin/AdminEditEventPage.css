@@ -1,0 +1,98 @@
+/* src/pages/admin/AdminEditEventPage.css */
+
+@import "../../styles/theme.css";
+
+.admin-edit-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 40px 30px;
+    background: #ffffff;
+    border-radius: 26px;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border);
+}
+
+.admin-edit-container h1 {
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: var(--text-dark);
+    margin-bottom: 30px;
+}
+
+.admin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: var(--text-dark);
+    font-size: 0.95rem;
+}
+
+.admin-form input,
+.admin-form textarea,
+.admin-form select {
+    padding: 12px 14px;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    background: #f9fafe;
+    font-size: 1rem;
+    transition: 0.2s;
+    font-family: "Inter", sans-serif;
+    color: var(--text-dark);
+}
+
+.admin-form input:focus,
+.admin-form textarea:focus,
+.admin-form select:focus {
+    outline: none;
+    border-color: var(--primary);
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(0,115,230,0.12);
+}
+
+.actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.btn-primary,
+.btn-secondary {
+    flex: 1;
+    padding: 14px 26px;
+    border: none;
+    border-radius: 16px;
+    font-size: 1.08rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.28s ease;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: #fff;
+    box-shadow: 0 5px 12px rgba(0,115,230,0.25);
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: var(--bg-grey);
+    color: var(--text-dark);
+}
+
+.btn-secondary:hover {
+    background: #dce1e7;
+}

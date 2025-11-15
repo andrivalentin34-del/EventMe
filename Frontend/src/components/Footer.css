@@ -1,0 +1,13 @@
+/* src/components/Footer.css */
+.footer {
+    background-color: #111827; /* Dark background */
+    color: #9CA3AF; /* Light gray text */
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 80px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1rem;
+}

@@ -1,0 +1,59 @@
+/* ================================
+   THEME GLOBALĂ – EventMe Premium
+   ================================ */
+
+:root {
+    /* Culori principale */
+    --primary: #0a2342;
+    --primary-dark: #06172e;
+    --accent: #2a6f97;
+
+    /* Danger */
+    --danger: #e63946;
+    --danger-dark: #c92f3b;
+
+    /* Fundaluri */
+
+    --bg-page: #f1f5ff;  /* Alb-albăstrui foarte deschis */
+    --bg-light: #ffffff;
+    --bg-grey: #f2f4f7;
+
+    /* Borduri */
+    --border: #e1e5ee;
+
+    /* Text */
+    --text-dark: #0a2342;
+    --text-medium: #475569;
+    --text-light: #94a3b8;
+
+    /* Umbre */
+    --shadow-sm: 0 4px 10px rgba(15, 23, 42, 0.08);
+    --shadow-md: 0 10px 24px rgba(15, 23, 42, 0.12);
+}
+
+/* ================================
+   RESET / STIL GENERAL
+   ================================ */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg-page);
+    font-family: "Inter", sans-serif;
+    color: var(--text-dark);
+}
+
+.page-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 24px 20px 40px;
+}
+
+/* Formular — text perfect vizibil */
+input,
+textarea,
+select {
+    background: #ffffff !important;
+    color: var(--text-dark) !important;
+    border: 1px solid var(--border);
+}

@@ -1,0 +1,32 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Event {
+  id          Int      @id @default(autoincrement())
+  title       String
+  date        DateTime
+  location    String
+  description String?
+  category    String?
+
+  lat         Float?
+  lon         Float?
+  city        String?
+  country     String?
+
+  details     String?  // URL for more details or directions
+  imageUrl    String?  // <-- noul câmp pentru imagine
+}
+
+model User {
+  id       Int     @id @default(autoincrement())
+  username String  @unique
+  password String
+  role     String  @default("admin")
+}

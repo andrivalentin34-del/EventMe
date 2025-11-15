@@ -1,0 +1,41 @@
+### Test server
+GET http://localhost:5000/
+
+###
+
+### Lista evenimente
+GET http://localhost:5000/api/events
+
+###
+
+### Un eveniment specific
+GET http://localhost:5000/api/events/1
+
+###
+
+### Adaugă eveniment nou
+POST http://localhost:5000/api/events
+Content-Type: application/json
+
+{
+  "title": "Concert Rock",
+  "date": "2025-12-15",
+  "location": "Timișoara",
+  "description": "Concert live cu trupe locale"
+}
+
+###
+
+### Editează eveniment
+PUT http://localhost:5000/api/events/2
+Content-Type: application/json
+
+{
+  "title": "Maraton Modificat",
+  "location": "Constanța"
+}
+
+###
+
+### Șterge eveniment
+DELETE http://localhost:5000/api/events/3

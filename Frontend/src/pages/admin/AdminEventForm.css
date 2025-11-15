@@ -1,0 +1,100 @@
+/* Admin form – design premium tip dashboard */
+
+.admin-form-container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 32px;
+    border-radius: 16px;
+    border: 1px solid #e4e7ec;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.08);
+    font-family: "Inter", sans-serif;
+}
+
+.admin-form-title {
+    font-size: 1.9rem;
+    font-weight: 800;
+    margin-bottom: 30px;
+    color: #0a2342;
+    text-align: center;
+}
+
+.admin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Grup input */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group label {
+    font-size: 0.95rem;
+    color: #0a2342;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 12px 14px;
+    border: 1px solid #cfd3d9;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: 0.25s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #0a2342;
+    box-shadow: 0 0 0 3px rgba(10, 35, 66, 0.15);
+    outline: none;
+}
+
+/* Butoane */
+.form-buttons {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.admin-btn {
+    padding: 10px 18px;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    border: none;
+    transition: 0.25s;
+}
+
+.admin-btn.primary {
+    background: #0a2342;
+    color: #fff;
+}
+
+.admin-btn.primary:hover {
+    background: #081b33;
+    transform: translateY(-2px);
+}
+
+.admin-btn.secondary {
+    background: #e63946;
+    color: #fff;
+}
+
+.admin-btn.secondary:hover {
+    background: #c92f3b;
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .admin-form-container {
+        padding: 24px;
+    }
+}
